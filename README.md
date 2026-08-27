@@ -1,33 +1,27 @@
-NumPad Dot Fix
-Replace the NumPad decimal/comma key with a dot (.) on Windows.
+# NumPad Dot Fix
 
-Designed for users of Latvian and other keyboard layouts where the numeric keypad decimal key produces a comma instead of a dot.
+Fixes the numeric keypad decimal key to always output a dot (`.`) instead of a comma (`,`).
 
-Features
-No administrator rights required
-Automatic AutoHotkey installation
-Per-user installation
-Starts automatically when you sign in
-Small and lightweight
-Installation
-Open PowerShell and run:
+No administrator rights required.
 
+## Install
+
+```powershell
 irm https://raw.githubusercontent.com/girtsbeb-lab/numpaddot-fix/main/install.ps1 | iex
-Uninstall
+```
+
+## Uninstall
+
+```powershell
 irm https://raw.githubusercontent.com/girtsbeb-lab/numpaddot-fix/main/uninstall.ps1 | iex
-What It Does
-Creates the following AutoHotkey script:
+```
 
-#Requires AutoHotkey v2.0
-NumpadDot::Send(".")
-and configures it to start automatically for the current user.
+## Installation Location
 
-Installation Location
-The script is stored in:
-
+```text
 %LOCALAPPDATA%\NumpadDotFix
-typically:
+```
 
-C:\Users\<username>\AppData\Local\NumpadDotFix
-License
+## License
+
 MIT
