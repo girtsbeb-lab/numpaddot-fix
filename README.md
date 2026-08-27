@@ -43,6 +43,12 @@ or manually remove:
 - `%LOCALAPPDATA%\NumpadDotFix`
 - `HKCU\Software\Microsoft\Windows\CurrentVersion\Run\NumpadDotFix`
 
+## Windows SmartScreen
+
+NumpadDotFix is a small open-source utility and is not code-signed.
+
+Windows may display a SmartScreen warning when downloading or running the executable. You can review the source code in this repository before choosing to run it.
+
 ## License
 
 MIT
