@@ -3,12 +3,10 @@ Remove-ItemProperty `
     -Name "NumpadDotFix" `
     -ErrorAction SilentlyContinue
 
-Get-Process AutoHotkey -ErrorAction SilentlyContinue | Stop-Process -Force
-
-$ScriptFolder = Join-Path $env:LOCALAPPDATA "NumpadDotFix"
+Get-Process NumpadDotFix -ErrorAction SilentlyContinue | Stop-Process -Force
 
 Remove-Item `
-    $ScriptFolder `
+    "$env:LOCALAPPDATA\NumpadDotFix" `
     -Recurse `
     -Force `
     -ErrorAction SilentlyContinue
